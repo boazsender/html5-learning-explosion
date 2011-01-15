@@ -2,37 +2,24 @@
 <html>
   <head>
 	  <title>Example 1</title>
+	 <link rel="stylesheet" href="../css/styles.css" type="text/css">
+	 
 	 <style>
-	  body {
-	    font-family: helvetica, arial,sans-serif;
-      background-color: #444444;
-      background-image: -moz-linear-gradient(top, #444444, #999999); 
-      background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #444444),color-stop(1, #999999)); 
-      background-image: linear-gradient(top, #444444, #999999);
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#444444', EndColorStr='#999999'); 
-          }
-              
-	  section{float:left; margin-right:10px;
-	          background:#CCCCCC;
-	          width: 300px;
-	          -webkit-box-shadow: 0px 0px 30px #000 inset;}
-	  
-	  aside{float:right; 
-	        width:100px; 
-	        background:#EEEEEE;
-	        }
-	  
-	  aside, section{
-	    -webkit-border-radius: 13px;  //this is CSS3! 3 versions for different browser
-	    -moz-border-radius: 13px;
-	    border-radius: 13px;
-	  } 
-	  h1, h2, h3 {margin-top: 3px; margin-bottom: 3px;}             
+	 @font-face {
+   	font-family: 'PlexifontBVRegular';
+   	src: url('fonts/plexifont/plexifont-webfont.eot');
+   	src: local('☺'), url('fonts/plexifont/plexifont-webfont.woff') format('woff'), url('fonts/plexifont/plexifont-webfont.ttf') format('truetype'), url('fonts/plexifont/plexifont-webfont.svg#webfont2yTyvDEI') format('svg');
+   	font-weight: normal;
+   	font-style: normal;
+   }
+   
+   h1 {font-family:PlexifontBVRegular, arial, sans-serif;}
 	 </style>
   </head>
 
   <body>
     <header><h1>hello world.</h1></header> <!--HTML5 -->
+    
     
     <section>  <!--HTML5 -->
     <h2>Basic Markup</h2>
@@ -66,6 +53,11 @@
 	      <input type="checkbox">
 	    </form>
 	  </section>
+	  
+	  <section>
+	    <h2>Audio/ Video</h2>
+	    <video src="http://popcornjs.org/tryme.ogv" controls="true">
+	  </section>  
 	  
 	  <aside> <!--HTML5 -->
       <p>As an aside...</p>
