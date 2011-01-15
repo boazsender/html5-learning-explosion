@@ -1,29 +1,19 @@
 <!doctype>
 <html>
   <head>
+    <title>Rebekah's page</title>
     <style>
-    body {
-      font-family: sans-serif;
-      background-image: -webkit-gradient();
-    }
-    section {
-      float: left;
-      margin-right: 10px;
-      background-color: #ccc;
-      width: 300 px;
-      -webkit-box-shadow: 0px 0px 12px #999 inset;
-    }
-    aside {
-      float: right;
-      width: 100px;
-      background-color: #eee;
-    }
-    aside, section{
-      padding: 5px;
-      -webkit-border-radius: 13px;
-      -mox-border-radius: 13px;
-      border-radius: 13px;
-    }
+      @font-face{
+        font-family: 'Kranky';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Kranky'), url('http://themes.googleusercontent.com/font?kit=9MhcqozOOK22yTdfTb9Abg') format('truetype');
+        
+        
+      }
+      h1 {
+        font-family:Kranky;
+      }
     </style>
   </head>
   <body>
@@ -61,7 +51,13 @@
             <input type="checkbox">
          </form>
        </section>
-       
+       <section>
+        <h2>Audio/Video</h2>
+        <video src="http://popcornjs.org/tryme.ogv" controls="true">
+          {
+            width: 280 px;
+          }
+       </section>
        <aside>
          
        </aside>
