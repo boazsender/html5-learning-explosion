@@ -1,51 +1,64 @@
 <!doctype>
 
 <html>
-<head>
- <style>
- body {
-   font-family:san-derif;
- }
-   
-   section {float:left;
-     margin-right:10px;
-     background-color:#ccc;
-     width:300px;
-     -webkit-box-shadow:0px 0px 15px #999 inset;
-     }
- aside {
-   float:right;
-   width:100px;
-   background-color:#eee;
- }
- aside, section {
-   padding:5px;
-   -webkit-border-radius:15px;
-   -moz-border-radius:15px;
-   border-radius:15px;
-   
-   }
- 
- </style>
+    <head>
+      <title>John's Page</title>
+      <link href='http://fonts.googleapis.com/css?family=Irish+Growler' rel='stylesheet' type='text/css'>
+     <style>
+      body {
+         font-family: "Irish Growler";
+      }
+      header {
+        font-family:Schoolbell;
+      }
+      section {
+        float:left;
+        margin-right:10px;
+        margin-bottom:10px;
+        background-color:#ccc;
+        width:300px;
+        -webkit-box-shadow:0px 0px 35spx #999 inset;
+      }
+      aside {
+        float:right;
+        width:100px;
+        background-color:#eee;
+      }
+      aside, section {
+        padding:5px;
+        -webkit-border-radius:15px;
+        -moz-border-radius:15px;
+        border-radius:15px;
+      }
+      video {
+        width:480px;
+        float:right;
+        margin:0px 0px 100px 0px;
+      }
+    </style>
   </head>
   <body>
     <header>
       <h1>hello world</h1>
-      </header>
-  <section>
-    <h2>Basic Markup</h2>
-     <p class="html5class"> I'm <b>really</b> excited about being her!</p>
+    </header>
+    <section>
+      <h2>Basic Markup</h2>
+      <p class="html5class">
+        I'm <b>really</b> excited about being her!
+      </p>
 
-    <p><a href="http://boazsender.com" target="_blank">I'm</a> so happy! for these reasons</p>
+      <p>
+        <a href="http://boazsender.com" target="_blank">I'm</a> so happy! for these reasons
+      </p>
       <ul>
         <li>because</li>
         <li>because2</li>
-       </ul
+       </ul>
 
        <ol>
          <li>one</li>
          <li>two</li>
-         </ol>
+       </ol>
     </section>
     <section>
       <h2>Forms Markup</h2>
@@ -56,23 +69,26 @@
         <select>
           <option>one</option>
           <option>two</option>
-            </form>
-      </section>
-<input type="radio">  
-<input type="radio"> 
-<input type="radio"> 
-<input type="radio"> 
-<input type="checkbox">
-<input type="checkbox">
-<input type="checkbox">
-<input type="checkbox">
-
-      <aside>
-        <p>we're building a webpage</p>
-        </aside>
-     
-    
-    
+        </select>
+        <input type="radio">  
+        <input type="radio"> 
+        <input type="radio"> 
+        <input type="radio"> 
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+      </form>
+    </section>
+    <aside>
+      <p>
+        we're building a webpage
+      </p>
+    </aside>
+    <section>
+      <h2>AUDIO/VIDEO</h2>
+      <video src="http://popcornjs.org/tryme.ogv" controls="true">
+    </section>
     </body>
 </html>
 
