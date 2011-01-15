@@ -1,15 +1,44 @@
 <!doctype>
 <html>
   <head>
-    <title>Boaz's page</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+      body {
+        font-family: sans-serif;
+        background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #eee),color-stop(1, #aaa)); /* Saf4+, Chrome */
+        
+      }
+      h1, h2, h3{
+        margin-top:3px;
+        margin-bottom: 3px;
+      }
+      section{
+        float: left;
+        margin-right:10px;
+        background-color: #ccc;
+        width: 300px;
+        -webkit-box-shadow: 0px 0px 12px #999 inset;
+      }
+      aside {
+        float: right;
+        width: 100px;
+        background-color: #eee;
+      }
+      
+      aside, section{
+        padding: 15px;
+        -webkit-border-radius: 13px;
+        -moz-border-radius:13px;
+        -o-border-radius:13px;
+        border-radius:13px;
+      }
+    </style>
   </head>
   <body>
     <header>
-      <h1 class="fancy">hello world</h1>
+      <h1>hello world</h1>
     </header>
     <section>
-      <h2 class="fancy">Basic Markup</h2>
+      <h2>Basic Markup</h2>
       <p>
         I'm <b>really</b> a excited web page!
         <i>And I'm <a href="http://boazsender.com">pumped</a> to be here.</i>
@@ -42,10 +71,6 @@
         <input type="checkbox">
         <input type="checkbox">
       </form>
-    </section>
-    <section id="the-video">
-      <h2>Audio/Video</h2>
-      <video src="http://popcornjs.org/tryme.ogv" controls="true">
     </section>
     <aside>
       <p>
