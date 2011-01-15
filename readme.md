@@ -13,6 +13,7 @@ git push origin master
 #html5:
 Mike Taylr: http://miketaylr.com/code/input-type-attr.html
 sample video source: http://popcornjs.org/tryme.ogv
+Good list of tags: http://htmldog.com/guides/htmlbeginner/gettingstarted/
  
 #CSS3:
 http://code.google.com/webfonts
