@@ -3,13 +3,23 @@
 <head>
 <title>example 1 - hello world</title>
 <style>
+@font-face {
+  font-family: 'Gruppo';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gruppo'), url('http://themes.googleusercontent.com/font?kit=uU5IFiQZ8WKPhrRfLBLURw') format('truetype');
+}
 body { 
-  font-family: sans-serif;
+  font-family: 'Gruppo';
+   background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #05a),color-stop(1, #aaa)); /* Saf4+, Chrome */
   }
   h1, h2, h3 {
     margin-top: 3px;
     margin-bottom:3px;
   }
+.fancy {
+  font-family: "Goudy Old Style", Baskerville, "Warnock Pro", "Palatino","Book Antiqua", Georgia, serif;
+}
 section {
     float:left; 
     margin: 10px;
@@ -20,7 +30,7 @@ section {
 aside {
     float:right;
     width 100px;
-    background-color 
+    background-color: #$114; 
     }
 aside, section {
   padding: 9px;
@@ -29,7 +39,13 @@ aside, section {
   border-radius:11px;         //for ie9
   
 }
-    }
+video {
+  width: 280px;
+} 
+#the_video {
+  color:red;
+  font-family: Times, "Times New Roman";
+}   
 </style>
 </head>
 <body>
@@ -80,8 +96,18 @@ aside, section {
     
   </form>
 </section>
+  
+<section>
+  <h2>Audio video</h2>
+  <video src="http://popcornjs.org/tryme.ogv" controls="true">
+</section>
 
-<aside>
+<section>
+  <h2  class="fancy">Fonts</h2>
+  
+</section>
+
+<aside id="the_video">
   <p>We're building web sites today.</p>
 </aside>
 
