@@ -76,9 +76,16 @@
     </style>
     
     <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.8/jquery-ui.min.js"></script>
     <script src="http://demos.flesler.com/jquery/scrollTo/js/jquery.scrollTo-min.js"></script>
     <script>
       $(function(){
+        
+        $('nav').draggable({
+          axis: 'x'
+        })
+        $('#section-1 ul').sortable()
+        
         $('nav a').click(function( event ){
           event.preventDefault()
           var elementId = $(this).attr('href');
@@ -127,6 +134,8 @@
         <ul>
           <li>Because I'm teaching my fave thing</li>
           <li>Because this class is so awesome!</li>
+          <li>Because it's cooler to sort more than two!</li>
+          <li>Because four is the nicest</li>
         </ul>
       </section>
       <section id="section-2">
