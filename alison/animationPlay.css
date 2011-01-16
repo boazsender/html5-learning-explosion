@@ -1,0 +1,110 @@
+body {background: #666666;}
+
+ul.system {
+    position: relative;
+    /* height: 640px; */
+    list-style: none;
+    -webkit-transition: all 0.09s ease-in;
+    -moz-transition: all 0.09s ease-in;
+    -o-transition: all 0.09s ease-in;
+    transition: all 0.09s ease-in;
+}
+
+ul.system li {
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-name:orbit;
+}
+
+/*this is the curcle that rotates */
+ul.system li {
+    text-indent: -9999px;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    border: 1px solid white;
+/*    opacity: 0.7;*/
+}
+
+/*this is the dot on the edge of the circle */
+ul.system li span {
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+li.circleElement1 span {
+   	background: black;
+	/* this positions the smaller circle */
+	top: 10px;
+	left: 10px;
+}
+
+ul.system li.circleElement1 {
+   width: 100px;
+   height: 100px;
+   -webkit-border-radius: 52px;
+   -moz-border-radius: 52px;
+   border-radius: 52px;
+   top: 270px;
+   left: 430px;
+   z-index: 99;
+}
+
+li.circleElement2 span {
+   	background: red;
+	/* this positions the smaller circle */
+	top: 24px;
+	left: 24px;
+}
+
+ul.system li.circleElement2 {
+   width: 200px;
+   height: 200px;
+   -webkit-border-radius: 100px;
+   -moz-border-radius: 100px;
+   border-radius: 100px;
+   top: 200px;
+   left: 500px;
+   z-index: 98;
+}
+
+li.circleElement3 span {
+   	background: white;
+	/* this positions the smaller circle */
+	top: 200px;
+	left: 200px;
+}
+
+ul.system li.circleElement3 {
+   width: 500px;
+   height: 500px;
+   -webkit-border-radius: 250px;
+   -moz-border-radius: 250px;
+   border-radius: 250px;
+   top: 0px;
+   left: 0px;
+   z-index: 98;
+}
+
+
+
+
+ul.system li.circleElement1 {-webkit-animation-duration:5s;}
+ul.system li.circleElement2 {-webkit-animation-duration:10s;}
+ul.system li.circleElement3 {-webkit-animation-duration:20s;}
+
+
+
+
+
+
+
+
+@-webkit-keyframes orbit { 
+from { -webkit-transform:rotate(0deg) } 
+to { -webkit-transform:rotate(360deg) } }
