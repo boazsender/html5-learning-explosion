@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'Kranky';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Kranky'), url('http://themes.googleusercontent.com/font?kit=9MhcqozOOK22yTdfTb9Abg') format('truetype');
+}
+body {
+  font-family: Kranky;
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #fff),color-stop(1, #666)); /* Saf4+, Chrome */
+
+}
+h1, h2, h3{
+  margin-top:3px;
+  margin-bottom: 3px;
+  
+}
+section{
+  //float: left;
+  background-color: #ccc;
+  width: 300px;
+  -webkit-box-shadow: 0px 0px 12px #666 inset;
+}
+aside {
+  //float: right;
+  width: 100px;
+  background-color: #eee;
+
+}
+aside, section{
+  padding: 15px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius:13px;
+  -o-border-radius:13px;
+  border-radius:13px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+}
+
+#myLink a{
+	-webkit-transition: all 1s;
+	text-decoration: none;
+	font-size: 20px;
+	color: #444;
+	//font-family: PlexiFontBVRegular;
+	text-shadow: 1px 15px 10px #000;
+	display: inline;
+	
+}
+
+#myLink a:hover{
+	color: #fff;
+	font-size: 20px;
+	text-shadow: 1px 1px 2px #000;
+	margin-left: -50px;
+}
+	
+video {
+  width: 280px;
+}
+.fancy {
+  font-family: "Goudy Old Style", Baskerville, "Warnock Pro", "Palatino","Book Antiqua", Georgia, serif;
+}
+#the-video {
+  font-family: times;
+  color: red;
+}

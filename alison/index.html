@@ -2,9 +2,11 @@
 <html>
   <head>
 	  <title>Example 1</title>
-	 <link rel="stylesheet" href="../css/styles.css" type="text/css">
+	 <link rel="stylesheet" href="styles.css" type="text/css">
+	 <link rel="stylesheet" href="speechBubbles.css" type="text/css">
 	 
 	 <style>
+	 
 	 @font-face {
    	font-family: 'PlexifontBVRegular';
    	src: url('fonts/plexifont/plexifont-webfont.eot');
@@ -14,16 +16,25 @@
    }
    
    h1 {font-family:PlexifontBVRegular, arial, sans-serif;}
+   
+   
+   nav .spch-bub-inside{font-size:50px; }
+   
 	 </style>
+	 
+	 <script src="http://code.jquery.com/jquery.js"></script>
+	 
+	 
   </head>
 
   <body>
     <header><h1>hello world.</h1></header> <!--HTML5 -->
+    <nav><p class="spch-bub-inside" href="#"><span class="point"></span><em>I am learning some <a href="http://www.virtualunrealityproject.com" target=_blank>HTML5</a></em></p></nav>
     
     
+    <section id="myLink">I am learning some <a href="http://www.virtualunrealityproject.com" target=_blank>HTML5</a></section>
     <section>  <!--HTML5 -->
     <h2>Basic Markup</h2>
-    <p>I am learning some <a href="http://www.virtualunrealityproject.com" target=_blank>HTML5</a></p>
     
     <ol>
       <li>Ola</li>
@@ -31,11 +42,11 @@
       <li>Aloha</li>
       <li>Nihao</li>
     </ol>
-	
 	  </section>
 	  
-	  <section> <!--HTML5 -->
+	  <section id="section1"> <!--HTML5 -->
 	    <h2>Forms markup</h2>
+	    <a href="#">Click Me</a>
 	    <form>
 	      <input placeholder="find me..." type="search">
 	      <input type="button" value="go">
@@ -54,7 +65,7 @@
 	    </form>
 	  </section>
 	  
-	  <section>
+	  <section id="section2">
 	    <h2>Audio/ Video</h2>
 	    <video src="http://popcornjs.org/tryme.ogv" controls="true">
 	  </section>  
