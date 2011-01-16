@@ -3,55 +3,153 @@
   <head>
     <title>Boaz's page</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/speachbubble.css">
+    <style>
+      body {
+        height: 3500px;
+      }
+      .boaz{
+        background: url('boaz-sender.jpg') no-repeat -50px -50px;
+        width: 100px;
+        height: 100px;
+        float: left;
+        margin: 0 10px 10px 0px;
+        -webkit-border-radius: 10px;
+      }
+      h1.fancy{
+        font-family: Kranky;
+      }
+      .text {
+        color: gray;
+      }
+      p { 
+        font-family: helvetica;
+      }
+      nav {
+        width: 100px;
+        background-color: #eee;
+        padding:10px;
+        -webkit-box-shadow: #222 -1px 0px 10px;
+        position: fixed;
+        right: 10px;
+        top: 0px;
+        z-index: 1;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+      nav ul {
+        padding: 0;
+      }
+      nav li {
+        list-style-type: none;
+      }
+      .fine {
+        font-size: 10px;
+        color: #999;
+        font-style: italic;
+      }
+      section {
+        width: 450px;
+      }
+      .container {
+        margin: auto;
+        text-align: left;
+        width: 450px;
+      }
+    </style>
+    
+    <!-- <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="http://demos.flesler.com/jquery/scrollTo/js/jquery.scrollTo-min.js"></script>
+    <script>
+      $(function(){
+        $('nav a').click(function( event ){
+          event.preventDefault()
+          
+          var elementId = $(this).attr('href');
+          
+          $('body').scrollTo( elementId, 400, {
+            easing:'linear' 
+          });
+          
+        })
+      })
+    </script> -->
+    
   </head>
   <body>
-    <header>
-      <h1 class="fancy">hello world</h1>
-    </header>
-    <section>
-      <h2 class="fancy">Basic Markup</h2>
-      <p>
-        I'm <b>really</b> a excited web page!
-        <i>And I'm <a href="http://boazsender.com">pumped</a> to be here.</i>
-      </p>
-      <p>
-        I'm so happy for these reasons!:
-      </p>
-      <ul>
-        <li>Because I'm teaching my fave thing</li>
-        <li>Because this class is so awesome!</li>
-      </ul>
-    </section>
-    <section>
-      <h2>Forms Markup</h2>
-      <form>
-        <input placeholder="search" type="search">
-        <input type="button" value="go">
-        <input type="range">
-        <select>
-          <option>opt 1</option>
-          <option>opt 2</option>
-          <option>opt 3</option>
-        </select>
-        <input type="file">
-        <input type="email">
-        <input type="radio">
-        <input type="radio">
-        <input type="radio">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-      </form>
-    </section>
-    <section id="the-video">
-      <h2>Audio/Video</h2>
-      <video src="http://popcornjs.org/tryme.ogv" controls="true">
-    </section>
-    <aside>
-      <p>
-        we're building a webpage
-      </p>
-    </aside>
+    <div class="container">
+      <header>
+        <h1 class="fancy text">hello world</h1>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="#section-1">Section 1</a></li>
+          <li><a href="#section-2">Section 2</a></li>
+          <li><a href="#section-3">Section 3</a></li>
+          <li><a href="#section-4">Section 4</a></li>
+        </ul>
+        <p class="fine">
+          this web page built by the html5 learning explosion collective
+        </p>
+      </nav>      
+      <section id="section-1">
+        <h2 class="fancy">Basic Markup</h2>
+        <p>
+          I'm <b>really</b> a excited web page!
+          <i>And I'm <a href="http://boazsender.com">pumped</a> to be here.</i>
+        </p>
+        <p>
+          I'm so happy for these reasons!:
+        </p>
+        <ul>
+          <li>Because I'm teaching my fave thing</li>
+          <li>Because this class is so awesome!</li>
+        </ul>
+      </section>
+      <section id="section-2">
+        <h2>Forms Markup</h2>
+        <form>
+          <input placeholder="search" type="search">
+          <a class="spch-bub-inside" href="#">
+              <span class="point"></span>  
+              <em>23 Comments</em>
+          </a>
+          
+          <input type="button" value="go">
+          <input type="range">
+          <select>
+            <option>opt 1</option>
+            <option>opt 2</option>
+            <option>opt 3</option>
+          </select>
+          <input type="file">
+          <input type="email">
+          <input type="radio">
+          <input type="radio">
+          <input type="radio">
+          <input type="checkbox">
+          <input type="checkbox"> 
+          <input type="checkbox">
+        </form>
+      </section>
+      <section  id="section-3">
+        <p>
+          <div class="boaz"></div>
+          Hi, my name is boaz!
+          Lorizzle ipsizzle dolizzle sit amizzle, consectetizzle adipiscing elit. Nullizzle da bomb velizzle, that's the shizzle volutpizzle, suscipit quizzle, gravida the bizzle, arcu. I'm in the shizzle shiznit gangsta. Sed erizzle. Mofo izzle dolizzle dapibizzle turpis tempizzle fo shizzle. Maurizzle my shizz nibh dawg turpizzle. Vestibulum the bizzle dang. Fizzle i saw beyonces tizzles and my pizzle went crizzle rhoncus nisi. In mofo tellivizzle uhuh ... yih! dictumst. Fo dapibizzle. Curabitur tellus bizzle, gizzle shut the shizzle up, mattizzle shizzle my nizzle crocodizzle, break it down that's the shizzle, nunc. Get down get down suscipizzle. Integizzle break it down velizzle for sure you son of a bizzle.
+        </p>
+        <p>
+          Etizzle uhuh ... yih! urna the bizzle nisl. Dang quizzle arcu. That's the shizzle pulvinizzle, ipsizzle malesuada malesuada uhuh ... yih!, nulla purus euismizzle cool, phat luctus hizzle things break yo neck, yall get down get down. Vivamus ullamcorpizzle, tortizzle izzle mah nizzle get down get down, nibh nunc go to hizzle crunk, izzle da bomb break yo neck, yall elizzle shit dolizzle. Maurizzle brizzle, orci vizzle volutpat consectetuer, doggy bow wow wow yippiyo fo, at bibendum enizzle izzle nisl. Nullizzle cool velizzle ac you son of a bizzle i'm in the shizzle viverra. Crunk nizzle crazy. Curabitur non for sure go to hizzle you son of a bizzle check it out facilisizzle. You son of a bizzle sapien doggy, iaculizzle sheezy, molestie da bomb, dang da bomb, erizzle. Nulla its fo rizzle pimpin' quis nibh bibendizzle break yo neck, yall. Nizzle pulvinizzle consectetuer the bizzle. Aliquizzle go to hizzle volutpizzle. Nunc fo shizzle gizzle izzle pretizzle bizzle. Cras sizzle lacizzle dope brizzle the bizzle ultricizzle. Ut nisl. Fo shizzle izzle dope. Hizzle cool shut the shizzle up uhuh ... yih! boofron. Donec izzle yippiyo.
+        </p>
+        <p>
+        Donizzle auctizzle maurizzle. Phasellizzle a elizzle shizzle my nizzle crocodizzle sheezy ghetto tincidunt. Maecenizzle a shizzle my nizzle crocodizzle. Vestibulizzle in lacizzle shizznit mauris sizzle tristique. Shizzle my nizzle crocodizzle izzle tortor sizzle mah nizzle erizzle shizzlin dizzle porta. Pimpin' velizzle fo shizzle, ultricies fo shizzle, hendrerit quis, adipiscing izzle, sure. Etizzle velizzle leo, aliquizzle consequat, pharetra non, yo mamma sed, crazy. Fo shizzle neque. Cras boom shackalack. Izzle fo fo shizzle ut sizzle fo shizzle mah nizzle fo rizzle, mah home g-dizzle break it down. Fusce the bizzle augue eu shit gizzle mattizzle. Bow wow wow phat doggy erat. Suspendisse bow wow wow daahng dawg, sollicitudin sed, away izzle, fo shizzle fo shizzle mah nizzle fo rizzle, mah home g-dizzle, . Donec faucibus gangsta ligula. Nizzle feugizzle, sure a ornare tempor, ass metizzle tincidunt black, eget funky fresh pede enim ac lorizzle. Phasellizzle you son of a bizzle leo, check out this izzle, shizzlin dizzle izzle, sure izzle, . Ut mollis i'm in the shizzle mofo ipsizzle. Break yo neck, yall ass nibh, suscipizzle daahng dawg, vestibulizzle you son of a bizzle, rutrum eu, velit. Maurizzle a . Sizzle non magna sit amizzle pot iaculis congue.
+        </p>
 
+      </section>
+      <section id="section-4">
+        <h2>Audio/Video</h2>
+        <video src="http://popcornjs.org/tryme.ogv" controls="true">
+      </section>
+    </div>
   </body>
 </html>
