@@ -3,13 +3,81 @@
   <head>
     <title>Tim Dziewit</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <style>
+      body {
+        height: 3500px;
+        text-align: center;
+      
+      }
+      h1.fancy {
+        font-family: Kranky;
+      }
+      p {
+        font-family: serif;
+      }
+      nav {
+        width: 150px;
+        background-color:#ccc;
+        padding: 5px;
+        -webkit-box-shadow: #222 -1px 1px 5px;
+        position: fixed;
+        right: 10px;
+        top: 0px;
+        z-index: 1000;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+      nav ul {
+       padding: 0; 
+      }
+      nav li {
+        list-style-type: none;
+      }
+      .fine {
+        font-size: 10px;
+        color: #999;
+        font-style: italic;
+      }
+      section {
+        width: 450px;
+      }
+      .container {
+        width: 450px;
+        margin: auto;
+        text-align: left;
+      }
+    </style>
+    <script src="http://code.juery.com/jquery.js"></script>
+    <script>
+      $(function(){
+        
+        $('nav a').click(function(){
+          
+          alert('clicked')
+          
+        })
+        
+      })
+    </script>
   </head>
   <body>
+    <div class="container">
     <header>
        <h1 class="fancy">hello world</h1>
     </header>
 
-    <section>
+    <nav>
+      <ul>
+        <li><a href="#section1">Nav1</a></li>
+        <li><a href="#">Nav2</a></li>
+        <li><a href="#">Nav3</a></li>
+      </ul>
+      <p class="fine">
+        this webpage built by the html5 learning explosion
+      </p>
+    </nav>
+
+    <section id="section1">
       <h2>Basic Markup</h2>
       <p>
         I'm a <b>really</b> excited web page
@@ -44,16 +112,24 @@
       </form>
     </section>
     
+    <section>
+     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget fringilla tortor. Donec id semper mauris. Aenean mauris nibh, luctus non suscipit vitae, placerat at quam. Fusce nec sapien vitae enim viverra lobortis et ut nisi. Nullam luctus orci et magna iaculis vel elementum quam commodo. Suspendisse potenti. Aliquam scelerisque, tortor aliquet vehicula lobortis, elit sapien vestibulum neque, ac suscipit erat eros ac odio. Aenean elementum, sapien et rhoncus malesuada, neque magna congue ipsum, non vestibulum lorem nisi vestibulum elit. Aenean bibendum consequat quam at consectetur. Maecenas vel justo non est luctus tincidunt id at nibh. In ut quam risus, a malesuada arcu.
+     </p>
+     <p>
+      Donec luctus, nulla nec porta commodo, velit nisi blandit lorem, sit amet fermentum quam orci id mauris. Duis porta justo ac nulla fermentum vehicula. Fusce iaculis, ipsum et laoreet suscipit, tellus nisi pellentesque sapien, ac scelerisque diam urna sed diam. Pellentesque sem purus, lobortis eget malesuada at, interdum sed dolor. Phasellus nec pharetra tellus. Suspendisse vitae sapien urna. Pellentesque interdum est at velit condimentum aliquam. Suspendisse tempus, sapien at iaculis pharetra, neque ligula placerat arcu, sed scelerisque ante nibh non tellus. Ut eget dui quis orci consectetur porta. Quisque turpis dolor, aliquet in bibendum id, sagittis eget nibh. Suspendisse rhoncus euismod purus, eget pulvinar quam volutpat non. Sed non bibendum nunc.
+    </p>
+    <p>
+      Morbi lorem nulla, gravida ac aliquet pulvinar, iaculis nec metus. Morbi consectetur, mauris scelerisque congue pharetra, leo elit dictum quam, at ultricies libero diam a libero. Etiam at dui dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus porta, lectus quis lacinia accumsan, massa erat lacinia odio, eget euismod elit augue eget libero. Morbi quis erat massa. In pharetra, libero et sagittis suscipit, mauris augue mollis neque, eu molestie sapien ligula a tortor. In molestie rhoncus libero et convallis. Nullam eu porttitor justo. Cras euismod luctus urna, et elementum mauris pellentesque a. Maecenas ac risus felis. Maecenas ac justo vel neque eleifend consequat accumsan sit amet purus. Maecenas tempor facilisis malesuada. Morbi et risus vel lectus porta euismod.
+    </p>
+      
+    </section>
+    
     <section id="the-video">
       <h2>Audio/Video</h2>
       <video src="http://popcornjs.org/tryme.ogv" controls="true">
     </section>
 
-    <aside>
-      <p>
-        we're building a webpage
-      </p>
-    </aside>
+</div>
 
   </body>
 </html>
