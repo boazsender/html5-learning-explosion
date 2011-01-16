@@ -26,9 +26,9 @@
         font-family: helvetica;
       }
       nav {
-        width: 100px;
+        width: 120px;
         background-color: #eee;
-        padding:10px;
+        padding:10px 0px;
         -webkit-box-shadow: #222 -1px 0px 10px;
         position: fixed;
         right: 10px;
@@ -37,11 +37,28 @@
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
       }
+      
+      nav a {
+        padding: 3px 25px;
+        display: block;
+        -webkit-transition: all .3s;
+        color: #444;
+        font-family: georgia;
+        text-decoration: none;
+        text-shadow: white 0px -1px 0px;
+      } 
+      nav a:hover {
+        color: #000099;
+        margin-left: -20px;
+      }     
       nav ul {
         padding: 0;
       }
       nav li {
         list-style-type: none;
+      }
+      nav p {
+        padding: 0px 25px;
       }
       .fine {
         font-size: 10px;
@@ -58,28 +75,33 @@
       }
     </style>
     
-    <!-- <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="http://code.jquery.com/jquery.js"></script>
     <script src="http://demos.flesler.com/jquery/scrollTo/js/jquery.scrollTo-min.js"></script>
     <script>
       $(function(){
         $('nav a').click(function( event ){
           event.preventDefault()
-          
           var elementId = $(this).attr('href');
-          
           $('body').scrollTo( elementId, 400, {
             easing:'linear' 
           });
-          
         })
+        
+        $('a')
+          .click(function( e ){ 
+            e.preventDefault();
+            $('#section-1')
+              .animate({marginLeft: --130}, 2000)
+          })
+        
       })
-    </script> -->
+    </script>
     
   </head>
   <body>
     <div class="container">
       <header>
-        <h1 class="fancy text">hello world</h1>
+        <h1 class="fancy text">hello world <span class="fancy">&</span> stuff</h1>
       </header>
       <nav>
         <ul>
@@ -87,6 +109,7 @@
           <li><a href="#section-2">Section 2</a></li>
           <li><a href="#section-3">Section 3</a></li>
           <li><a href="#section-4">Section 4</a></li>
+          <li><a href="#section-5">Section 5</a></li>
         </ul>
         <p class="fine">
           this web page built by the html5 learning explosion collective
@@ -108,28 +131,30 @@
       </section>
       <section id="section-2">
         <h2>Forms Markup</h2>
-        <form>
+        <form method="post">
           <input placeholder="search" type="search">
           <a class="spch-bub-inside" href="#">
               <span class="point"></span>  
               <em>23 Comments</em>
           </a>
           
-          <input type="button" value="go">
+          <input type="button" value="go" >
           <input type="range">
-          <select>
-            <option>opt 1</option>
-            <option>opt 2</option>
-            <option>opt 3</option>
+          <select name="opts">
+            <option value="my-hidden-val">opt 1</option>
+            <option value="my-hidden-val">opt 2</option>
+            <option value="my-hidden-val">opt 3</option>
           </select>
-          <input type="file">
-          <input type="email">
-          <input type="radio">
-          <input type="radio">
-          <input type="radio">
-          <input type="checkbox">
-          <input type="checkbox"> 
-          <input type="checkbox">
+          <input name="thefile" type="file">
+          <input name="email" type="email">
+          <input name="opta" type="radio">
+          <input name="optb" type="radio">
+          <input name="optc" type="radio">
+          <input name="opt1" type="checkbox">
+          <input name="opt2" type="checkbox"> 
+          <input name="opt3" type="checkbox">
+          
+          <input type="submit">
         </form>
       </section>
       <section  id="section-3">
@@ -149,6 +174,27 @@
       <section id="section-4">
         <h2>Audio/Video</h2>
         <video src="http://popcornjs.org/tryme.ogv" controls="true">
+      </section>
+      <section  id="section-5">
+        <h2>Tables</h2>
+        <table>
+          <tr>
+            <td>123</td>
+            <td>324</td>
+            <td>234</td>
+            <td>234</td>
+          </tr>
+          <tr>
+            <td>123</td>
+            <td>324</td>
+            <td>234</td>
+          </tr>
+          <tr>
+            <td>123</td>
+            <td>324</td>
+            <td>234</td>
+          </tr>
+        </table>
       </section>
     </div>
   </body>
